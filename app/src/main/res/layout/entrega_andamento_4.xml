@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/amarelotoolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNovaentrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Entrega em andamento"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnchegueinocliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/txtcadastroaprobado"
+        app:layout_constraintTop_toTopOf="@+id/txtcadastroaprobado"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat "
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chat" />
+
+        <ImageView
+            android:id="@+id/imgphone"
+            android:layout_width="27dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/phone" />
+    </LinearLayout>
+
+    <in.shadowfax.proswipebutton.ProSwipeButton
+        android:id="@+id/btnchegueinocliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:bg_color="#000"
+        app:btn_text="Completar Entrega"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/enderecoloja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Alexandre da silva"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtenderecoloja"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomerestaurante" />
+
+    <TextView
+        android:id="@+id/txtenderecoloja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Endereço"
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEnderecocliente"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/enderecoloja" />
+
+    <TextView
+        android:id="@+id/txtEnderecocliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Rua acrisio correia,87 gloria"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtcomlementoendereco"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtenderecoloja" />
+
+    <TextView
+        android:id="@+id/txtcomlementoendereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Complemento"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/endcomplemento"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnderecocliente" />
+
+    <TextView
+        android:id="@+id/txtcadastroaprobado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Estabelecimento"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toTopOf="@+id/Imgbarstatus" />
+
+    <TextView
+        android:id="@+id/txtnomerestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Ir para o cliente"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/enderecoloja"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtcadastroaprobado"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <TextView
+        android:id="@+id/endcomplemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="casa 7 bloco 75"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/txtenderecocliente"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtcomlementoendereco" />
+
+    <TextView
+        android:id="@+id/txtenderecocliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Entregar Pedido"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtnumeropedido"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus"
+        app:layout_constraintTop_toBottomOf="@+id/endcomplemento" />
+
+    <TextView
+        android:id="@+id/txtnumeropedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="0001"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Imgbarstatus"
+        app:layout_constraintStart_toStartOf="@+id/Imgbarstatus" />
+
+    <ImageView
+        android:id="@+id/Imgbarstatus"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnchegueinocliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grupok" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
