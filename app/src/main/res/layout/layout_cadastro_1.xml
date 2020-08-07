@@ -56,6 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtinformedados">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNomeCompletoMotoca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -77,6 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputnomedobanco">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCpfMotoca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -98,6 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputNumeroagencia">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCnhMotoca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -113,12 +116,13 @@
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:background="@drawable/retangulo"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputnumerodaconta">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailMotoca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -128,7 +132,7 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxCadastro"
         android:layout_width="332dp"
         android:layout_height="92dp"
         android:layout_marginStart="40dp"
@@ -137,13 +141,13 @@
         android:layout_marginRight="39dp"
         android:text="Li e concordo com os nossos Termos e Condições. os Termos estarão disponível dentro do aplicativo"
         android:textSize="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtEntrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarCadastro1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputDigitoconta" />
 
     <Button
-        android:id="@+id/txtEntrar"
+        android:id="@+id/btnEnviarCadastro1"
         android:layout_width="320dp"
         android:layout_height="44dp"
         android:layout_marginStart="46dp"
@@ -155,6 +159,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCadastro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

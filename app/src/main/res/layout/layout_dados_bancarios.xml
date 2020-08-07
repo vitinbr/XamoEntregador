@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
 
     <TextView
         android:id="@+id/txtCadastro2"
@@ -39,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCadastro2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNomeBanco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -60,6 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputnomedobanco">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNumeroAgencia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -81,6 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputNumeroagencia">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNumeroConta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
@@ -102,11 +106,13 @@
         app:layout_constraintTop_toBottomOf="@+id/inputnumerodaconta">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDigito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/retangulo"
             android:hint="Dígito da conta
-" />
+"
+            android:maxLength="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
